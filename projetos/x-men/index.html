@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto X-Men</title>
     <!-- LINK TO CSS -->
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <!-- LINK TO CSS 2 -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <!-- LINK TO RESPONSIVE CSS -->
+    <link rel="stylesheet" href="estilos/responsivo.css">
 </head>
 <body>
-   <!-- HEADER -->
+   <!-- ====== HEADER ======= -->
    <header class="cabecalho">
-
+     <img class="logo" src="imagens/logo.svg">
    </header>
 
-   <!-- MAIN -->
+   <!--======= MAIN ======= -->
     <main class="selecao-de-personagens">
         <section class="personagens">
           <h1 class="titulo">Selecione um personagem</h1>
           <ul class="lista-de-personagens">
-            <li class="personagem" id="ciclope">
+            <li class="personagem selecionado" id="ciclope">
                 <img src="imagens/card-ciclope.jpg">
             </li>
 
-            <li class="personagem" id="jean-grey">
+            <li class="personagem " id="jean-grey">
                 <img src="imagens/card-jean-grey.jpg">
             </li>
 
@@ -59,9 +63,13 @@
                 <h2 class="nome-personagem" id="nome-personagem">
                     Ciclope
                 </h2>
-                <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue controlá-los.</p>
+                <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue <br> controlá-los.</p>
             </div>
         </section>
     </main>
+
+    <!-- ====== SCRIPIT JS ========== -->
+    <script src="js/index.js"></script>
+
 </body>
 </html>
