@@ -19,11 +19,11 @@
         <div class="navbar">
             <div class="logo">
                 <img src="images/logo.png" width="125px">
-            </div>
+              </div>
               
             <!-- Nav -->
             <nav>
-                <ul>
+                <ul id="MenuItems">
                    <li><a href="#">Home</a></li>
                    <li><a href="#">Products</a></li>
                    <li><a href="#">About</a></li>
@@ -33,6 +33,7 @@
             </nav>
             <img src="images/cart.png"
              width="30px" height="30px">
+             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
 
         <!-- ROW! -->
@@ -329,27 +330,36 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                  <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and IOS mobile phone.</p>
-                  </div>
+                  
 
                   <div class="footer-col-2">
                     <img src="images/logo-white.png">
                     <p>Noso propósito é Sustentabilidade, fazer o prazer, e os benefecios dos Esportes serem Acessiveis de forma sustentavel a muitos. </p>
+                    <p>All directs reserved for Jayp.</p>
                   </div>
 
-                  <div class="footer-col-3">
-                   <h3>Useful links</h3>
-                  <ul>
-                    <li>Couppons</li>
-                    <li>Blog Post</li>
-                    <li>Return Policy</li>
-                    <li>Join Affiliate</li>
+                  
+                
                   </ul>
                   </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- === SCRIPT ==== -->
+          <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight ="0px"
+
+            function menutoggle() {
+               if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+               }else{
+                MenuItems.style.maxHeight = "0px";
+               }
+            }
+          </script>
 </body>
 </html>
