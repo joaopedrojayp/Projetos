@@ -1,0 +1,311 @@
+/* == GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;900&display=swap');
+
+/* VARIABLE CSS */
+:root{
+   --main-color: #d3ad7f;
+   --black: #13131a;
+   --background: #010103;
+   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track{
+background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+background-color: white;
+border-radius: 5rem;
+}
+
+body{
+    background-color: var(--background);
+  
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.btn:hover{
+   background-color: white;
+   color: orangered;
+   letter-spacing: 0.1rem ;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: orangered;
+    text-transform: uppercase;
+}
+
+/* ===== HEADER ===== */
+header{
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom:var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+   header .logo img{
+    height: 6rem;
+   }
+
+     header nav a{
+        margin: 0 1rem;
+        font-size: 1.6rem;
+        color: #fff;
+     }
+
+     header nav a:hover{
+        color: orangered;
+        border-bottom: 0.1rem solid orangered;
+     }
+
+     header .icon div{
+       color: #fff;
+       cursor:pointer;
+       font-size: 2.5rem;
+       margin-left: 2rem;
+     }
+
+     header .icon div:hover{
+      border-bottom: 0.1rem solid orangered;
+      
+     }
+
+     #menu-btn{
+        display: none;
+     }
+
+     header .search-form{
+        position: absolute;
+        top: 115%;
+        right: 7%;
+        background-color: #fff;
+        width: 50rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        transform: scaleY(0);
+        transform-origin: top;
+     }
+
+     header .search-form.active {
+      transform: scaleY(1);
+     }
+
+     header .search-form input{
+        height: 100%;
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 1rem;
+        text-transform: none;
+     }
+
+     header .search-form label{
+        cursor: pointer;
+        font-size: 2.2rem;
+        margin-left: 1.5rem;
+        color: var(--background);
+     }
+
+     header .search-form label:hover{
+        color: orangered;
+     }
+
+     
+      /* === HOME SECTION === */
+     .home{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(imagens/A.webp) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+     
+
+     .home .content{
+        max-width: 60rem;
+     }
+
+     .home .content h3{
+        font-size: 6rem;
+        text-transform: uppercase;
+        color:white;
+     }
+
+     .home .content h3 span{
+        color: orangered
+     }
+
+     .home .content p{
+      font-size: 2rem;
+      font-weight: lighter;
+      line-height: 1.8rem;
+      padding: 1rem;
+      color: #fff;
+     }
+
+     .home .content p span{
+        color: orangered;
+     }
+
+     /* === ABOUT SECTION === */
+     .about .row{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        flex-wrap: wrap;
+     }
+
+      .about .image{
+        flex: 1 1 45rem;
+        height: 500px;
+        overflow: hidden;
+      }
+
+     .about .row img{
+        width: 100%;
+       object-fit: cover;
+     }
+
+     .about .content{
+        flex: 1 1 45rem;
+        padding: 2rem;
+     }
+
+      .about .content h2{
+        color: white;
+        font-size: 2em;
+      }
+
+      .about .content h2 span{
+        color: orangered;
+      }
+
+     .about .content h3{
+        font-size: 3rem;
+        color: #fff;
+     }
+
+     .about .content h3 span{
+        color: orangered;
+     }
+
+     .about .content p{
+      font-size: 1.6rem;
+      color:wheat;
+      padding: 1rem 0;
+     }
+
+     /* === PRODUCT SECTION === */
+     .menu .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem ,1fr));
+        gap: 1.5rem;
+     }
+
+
+     .menu .box-container .box{
+        text-align: center;
+        border: var(--border);
+        position: relative;
+        transform-style: preserve-3d;
+        transform: perspective(2000px);
+        height: 350px;
+     }
+
+     menu .box-container .box .img-box{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        z-index: 1;
+     }
+
+     .menu .box-container .box img{
+        max-height: 100%;
+        object-fit: cover;
+     }
+
+    .img-box  img{
+        width: 300px;
+        height: 300px;
+        
+     }
+
+     .menu .box-container .box:hover{
+      outline: .2em solid #222;
+      outline-offset: 0;
+     }
+
+     .menu .box-container .box:hover img{
+        transform: scale(.8);
+        transition: .5s all;
+     }
+
+     .menu .info{
+        position: absolute;
+        background-color: var(--black);
+        color: #fff;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      
+        
+       
+     }
